@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer {
+            background-color: rgba(0, 58, 113, 255);
+        }
+
+        img {
+            height: 280px;
+        }
+
+        body {
+            background: hsl(0, 0, 94%);
+        }
+        .list li{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container px-5">
+            <a class="navbar-brand" href="Home.html"><b>Evo</b>.com</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <!-- <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" aria-current="page">Home </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Categories</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#"> Laptops</a>
+                    <a class="dropdown-item" href="#">Computers</a>
+                    <a class="dropdown-item" href="#">Processors </a>
+                    <a class="dropdown-item" href="#">Graphic Cards</a>
+                    <a class="dropdown-item" href="#">Cables & Ports</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contactus</a>
+                </li>
+              </ul> -->
+              <div class="col-md-6 col-sm-8 col-xs-11 navbar-left mt-2">
+                <div class="navbar-form " role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="max-width: 100%; width: 100%; border-radius: 230px;">
+                        <!-- <div class="input-group-btn">
+                            <button class="btn btn-default" style="background: rgb(25, 97, 204);" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for more Information"><i class="glyphicon glyphicon-search"></i></button>
+                        </div> -->
+                    </div>
+                </div>
+            </div> 
+            <form class="d-flex my-2 my-lg-0">
+                <i style="color: white; margin-left: 2vmin;" class="bi bi-heart p-2"></i>
+                <i style="color: white; margin-left: 2vmin;" class="bi bi-bell p-2"></i>
+                <i style="color: white; margin-left: 2vmin;" class="bi bi-cart p-2"></i>
+                <i style="color: white; margin-left: 2vmin; padding: 2vmin;"><span>Login/Signup</span></i>
+                <i style="color: white; margin-left: 2vmin;" class="bi bi-person-circle p-2"></i>
+              </form>
+    
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div style="padding: 1vmin; margin: 3vmin;">
+        <h6 style="font-weight: bold;">User Profile</h6>
+        <hr>
+        <h6 style="font-weight: bold;">Order History</h6>
+        <hr>
+        <h4 style="color: blue;">Customer Support</h4>
+        <ol class="list">
+            <li>Contact customer care</li>
+            <p>To Call immediately to our customer service</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button style="border: 1px solid blue; border-radius:22px;padding-left: 17vmin;
+                padding-right: 17vmin;margin-bottom: 2vmin;" class="btn me-md-2" type="button"><span style="color: blue;">Call</span></button>
+            </div>
+            <li>Enter the issue through Mail</li>
+            <p style="  width:50%;
+            ">Write a mail to us about the issue. Issues related with site malfunction, payment issues, Product delay or damaged products, etc.</p>
+        </ol>
+        <div>
+            <form class="f1 mb-3 p-3 my-4">
+                <div class="form-group ">
+                  <label for="exampleFormControlInput1">Enter your Email:</label>
+                  <input type="email"  class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group my-4">
+                  <label for="exampleFormControlTextarea1">Describe the issue:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="submit d-flex">
+            <p style="  width:50%;">Within 2 to 3 business days we will reply or solve the problem. We will intimate you initially if the problem takes additional days to solve.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center" style="border-radius: 12px;">
+                <button style="border: 1px solid blue; border-radius: 22px;padding-left: 10vmin; padding-right: 10vmin; margin-top: 65px;" class="btn me-md-2" type="button" onclick="submit()"><span style="color: blue;">Submit</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer class="container py-5 text-white">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <h5>Categories</h5>
+                    <ul  class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Personal Computers</a></li>
+                        <li><a class="link-secondary" href="#">Laptops</a></li>
+                        <li><a class="link-secondary" href="#">Gaming Computers</a></li>
+                        <li><a class="link-secondary" href="#">Gaming Laptops</a></li>
+                    </ul>
+                    <small class="d-block mb-3 text-muted">&copy; Copyright Evo.com</small>  
+                    <small class="d-block mb-3 text-muted">All Rights Reserved</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Laptops</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Laptop Accessories</a></li>
+                        <li><a class="link-secondary" href="#">Bluetooth devices</a></li>
+                        <li><a class="link-secondary" href="#">Bags</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Computer Hardware</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#"> Intel & AMD Processor</a></li>
+                        <li><a class="link-secondary" href="#">Hardrive & SSD</a></li>
+                        <li><a class="link-secondary" href="#">SMPS & Cables</a></li>
+                        <li><a class="link-secondary" href="#">Mother Board</a></li>
+                        <li><a class="link-secondary" href="#">RAM</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Let us help you</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Your Account</a></li>
+                        <li><a class="link-secondary" href="#">Report an issue</a></li>
+                        <li><a class="link-secondary" href="#">Order History</a></li>
+                        <li><a class="link-secondary" href="#">Terms & Conditions</a></li>
+                        <li><a class="link-secondary" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Call support-1188-6454-80</a></li>
+                        <li><a class="link-secondary" href="#">evo.electronics@gmail.com</a></li>
+                        <li><a class="link-secondary mt-3" href="#">Let’s Connect</a></li>
+                        <div class="fb margin-right:5vmin;">
+                          <i class="bi bi-facebook"></i>
+                          <i class="bi bi-instagram"></i>
+                          <i class="bi bi-twitter"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="toast align-items-center text-white bg-primary border-0 position-fixed top-0" role="alert"
+    aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+        <div class="toast-body">
+            Query submitted
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+    </div>
+</div>   
+    
+    
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+   
+</body>
+</html>

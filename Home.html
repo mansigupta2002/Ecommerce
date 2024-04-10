@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer {
+            background-color: rgba(0, 58, 113, 255);
+        }
+
+        img {
+            height: 280px;
+        }
+
+        body {
+            background: hsl(0, 0, 94%);
+        }
+    </style>
+</head>
+<style>
+    .carousel-indicators {
+        margin-right: 0%;
+        margin-bottom: 1rem;
+        margin-left: 0%;
+        top: 22%;
+        justify-content: flex-start;
+    }
+
+    .carousel-indicators .offer {
+        position: relative;
+        left: 8%;
+    }
+
+    .carousel-indicators h4 {
+        margin: 0px;
+        margin-bottom: 1vmin;
+    }
+
+    .me-md-2 {
+        border-radius: 20px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        display: none;
+    }
+
+    .mt-3 {
+        margin-top: 0% !important;
+    }
+
+    .justify-content-md-end {
+        margin-bottom: 2vmin;
+    }
+</style>
+
+<body>
+    <header>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+              <div class="container px-5">
+                <a class="navbar-brand" href="Home.html"><b>Evo</b>.com</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                  <!-- <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#" aria-current="page">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Categories</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#"> Laptops</a>
+                        <a class="dropdown-item" href="#">Computers</a>
+                        <a class="dropdown-item" href="#">Processors </a>
+                        <a class="dropdown-item" href="#">Graphic Cards</a>
+                        <a class="dropdown-item" href="#">Cables & Ports</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contactus</a>
+                    </li>
+                  </ul> -->
+                  <div class="col-md-6 col-sm-8 col-xs-11 navbar-left mt-2">
+                    <div class="navbar-form " role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="max-width: 100%; width: 100%; border-radius: 230px;">
+                            <!-- <div class="input-group-btn">
+                                <button class="btn btn-default" style="background: rgb(25, 97, 204);" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for more Information"><i class="glyphicon glyphicon-search"></i></button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div> 
+                <form class="d-flex my-2 my-lg-0">
+                  <a href="Home.html"><i style="color: white; margin-left: 2vmin;" class="bi bi-heart p-2"></i></a>
+                  <a href="Home.html"><i style="color: white; margin-left: 2vmin;" class="bi bi-bell p-2"></i></a>
+                  <a href="cart.html"><i style="color: white; margin-left: 2vmin;" class="bi bi-cart p-2"></i></a>
+                  <a href="userprofile.html"><i style="color: white; margin-left: 2vmin; padding: 2vmin;"><span>Login/Signup</span></i></a>
+                   <a href="userprofile.html"><i style="color: white; margin-left: 2vmin;" class="bi bi-person-circle p-2"></i></a> 
+                  </form>
+        
+                </div>
+              </div>
+            </nav>
+          </header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link dark" aria-current="page" href="#">Laptops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Computers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Processors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Graphic Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cables & Ports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Keyboard & Mouse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Headphone & Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Motherboards</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1 style="margin-left: 2vmin;"><b>Welcome Back</b></h1>
+    <h4 style="margin-left: 2vmin;">Computers and notebooks in one place</h4>
+
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <div class="offer" style="text-align: left;">
+                <h6 class="note">Notebooks</h6>
+                <h1><b>Upto 20% off</b></h1>
+                <h3>For Ultrabooks</h3>
+                <h4>Order now with EMI option</h4>
+                <div class="d-grid gap-2 d-md-flex " style="border-radius: 12px;">
+                    <button class="btn btn-primary me-md-2" type="button" onclick="goToProductDetails()">Order Now</button>
+                </div>
+            </div>
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="https://s3-alpha-sig.figma.com/img/af86/1af2/bd8ab22a021bec684f2f82a00cae7b90?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HPawPuC3qQJA8V0idHIzq0bZycSXp8iXoicEy-f16IyypX~S1d60plrPiU4s5ZLe6oGxdVQnvKrOvx76n1thKrA5O-Bump5iS6FDBjIJXlxRCE5R2M6pxkXXAisB1J3ORfl0TcaFqzGV-mqLIyDeGSrFyHXPJ3A5EeuOZ9myGyN68cNPqPlkyqULDA6yvp7SCMS1yS75k0obXQsQ5mD3SdcgiihfmS-a0lq1mL9YYNxFTYRZ2sJY1w15hQYccpebCq0M8zKZFdQ7EO~jclqggMVTSKntDGmZH638iJVipTJme72Ek-P2ALJTg~hHeuEa9cjlHmTQ76zf0b82XtQaig__"
+                    class="w-100 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="https://s3-alpha-sig.figma.com/img/af86/1af2/bd8ab22a021bec684f2f82a00cae7b90?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HPawPuC3qQJA8V0idHIzq0bZycSXp8iXoicEy-f16IyypX~S1d60plrPiU4s5ZLe6oGxdVQnvKrOvx76n1thKrA5O-Bump5iS6FDBjIJXlxRCE5R2M6pxkXXAisB1J3ORfl0TcaFqzGV-mqLIyDeGSrFyHXPJ3A5EeuOZ9myGyN68cNPqPlkyqULDA6yvp7SCMS1yS75k0obXQsQ5mD3SdcgiihfmS-a0lq1mL9YYNxFTYRZ2sJY1w15hQYccpebCq0M8zKZFdQ7EO~jclqggMVTSKntDGmZH638iJVipTJme72Ek-P2ALJTg~hHeuEa9cjlHmTQ76zf0b82XtQaig__"
+                    class="w-100 d-block" alt="Second slide">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid my-5 scroll">
+        <h4>Recommended</h4>
+        <h1><b>Best Selling</b></h1>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card border-0 shadow">
+                            <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <img src="https://s3-alpha-sig.figma.com/img/7d83/be6f/472c590ffba71c5b4facd3c9f7821946?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DtYfaBi1uJQgTswycIjQ7QgIlG2V6J4NhKw0ISumn9MJ79TV3~oreL1wFj9lK4cE8Jdk6pP98L0bYa-8bblIbYjW23G7R0TScTX6~5KiD79pIo68fj908g-EgtyBVUEuE3Qic0XK5ImBtR6ZTEbJ8CvNfTccoz0SxSpUv1XlFHCecDRRxU1NkqtGGaAPt2xANl-ywga7UzJ1waZtPGwMjgViTKdyrPwszqSK-2LcPeOTq0-H-TFqCvUQeCpQ991~QC6~Hw3g2gXV5~gLbQxlbjSeJxqsrjSsq--FdTI3zZI11h3lXh~oz4w~nv3DZsOCKVsUmIxA1bI02fpy2q5Zfg__"
+                                alt="" onclick="goToProductDetails()" class="card-img-top" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to see more details">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6>HP Laptop 15s - 12th Gen Intel i5 Processor,
+                                        Intel Iris Xe Graphics, 15.6-inch (39.6cm)...</h6>
+                                </div>
+                                <h5>Rs. 53,722</h5>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+                                    <button class="btn btn-primary me-md-2" type="button" onclick="buynow()">Buy</button>
+                                </div>
+                                <p class="card-text price"><span class="float-start rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                    </span> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <img src="https://s3-alpha-sig.figma.com/img/d392/d12c/26a19679b82dab0a9eb79d85e6b0e079?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X4ND4NG99Y4l-yE84mmEiIbbEyN3hYqtetc2aGT6aaP-pR94SjsMu0NA7O5dYOHVkZ4~rWO-XcRJbij3VWZKmlKGIBf2qoR9WcNj7cVL2knZSjLyPF6Bw4yVMFOEDktwDnuGKL1d0psmDw1QIGsBW1srX4YiQRRCiW7gzne8bg7xvlaQkAsFncBhoRLtaXJ0CY74-Tv9AHQaNHJLXafsjuip-Sx~RrrpKkGNTGeq1C3jbgBWmYm5Ah6YqGWUP5ZOZqoK~hD0zBWFbrRc~RnmVGDHRouiRFTp4fC7EIj-IOEU6lIxbtPAXMPASkimEg3Sv0ArgYDgzgjVZRTFlfkqcw__"
+                                alt="" onclick="goToProductDetails()" class="card-img-top" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to see more details">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                        RAM, 512...</h6>
+                                </div>
+                                <h5>Rs. 37,990</h5>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+                                    <button class="btn btn-primary me-md-2" type="button" onclick="buynow()">Buy</button>
+                                </div>
+                                <p class="card-text price"><span class="float-start rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                    </span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <img src="https://s3-alpha-sig.figma.com/img/1a6a/7b9a/11dad064d92b4820adf2612e251d61cc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iY6zEJWe10XMDcRvleGZcPd7BtrY0xYktizxETH9VKj4-gwG6EUv0SJwzgFNPZIGE0ECHHuyFLlBXWTdGKeTHoUB4yiU2lXXRco80cNKFOEBRpuFOD2nCI0BBXnbi0wp3-os~-kY8vHfk-p2te6SK99Z1aFYIoDbrAB-MpUuECIByY1gptqNBp792iKKYALcH1E9Unad~6JVmgGrf5UDLwbL1asbizZREtEMBvCKIBoiys4TIGqn2~1NmgKAJK8jegoCCTxOZTjPhRVzvg6RLKwy4WQrHx-Rl8geDEM-s7w2x7ELVVSSHj6Qfdb9TWzXk7dsVfejL6p-DawQ52hzeg__"
+                                alt="" onclick="goToProductDetails()" class="card-img-top" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to see more details">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                        RAM, 512...</h6>
+                                </div>
+                                <h5>Rs. 37,990</h5>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+                                    <button class="btn btn-primary me-md-2" type="button" onclick="buynow()">Buy</button>
+                                </div>
+                                <p class="card-text price"><span class="float-start rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                    </span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <img src="https://s3-alpha-sig.figma.com/img/7d83/be6f/472c590ffba71c5b4facd3c9f7821946?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DtYfaBi1uJQgTswycIjQ7QgIlG2V6J4NhKw0ISumn9MJ79TV3~oreL1wFj9lK4cE8Jdk6pP98L0bYa-8bblIbYjW23G7R0TScTX6~5KiD79pIo68fj908g-EgtyBVUEuE3Qic0XK5ImBtR6ZTEbJ8CvNfTccoz0SxSpUv1XlFHCecDRRxU1NkqtGGaAPt2xANl-ywga7UzJ1waZtPGwMjgViTKdyrPwszqSK-2LcPeOTq0-H-TFqCvUQeCpQ991~QC6~Hw3g2gXV5~gLbQxlbjSeJxqsrjSsq--FdTI3zZI11h3lXh~oz4w~nv3DZsOCKVsUmIxA1bI02fpy2q5Zfg__"
+                                alt="" onclick="goToProductDetails()" class="card-img-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see more details">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                        RAM, 512...</h6>
+                                </div>
+                                <h5>Rs. 37,990</h5>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+                                    <button class="btn btn-primary me-md-2" type="button" onclick="buynow()">Buy</button>
+                                </div>
+                                <p class="card-text price"><span class="float-start rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                    </span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <img src="https://s3-alpha-sig.figma.com/img/d392/d12c/26a19679b82dab0a9eb79d85e6b0e079?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X4ND4NG99Y4l-yE84mmEiIbbEyN3hYqtetc2aGT6aaP-pR94SjsMu0NA7O5dYOHVkZ4~rWO-XcRJbij3VWZKmlKGIBf2qoR9WcNj7cVL2knZSjLyPF6Bw4yVMFOEDktwDnuGKL1d0psmDw1QIGsBW1srX4YiQRRCiW7gzne8bg7xvlaQkAsFncBhoRLtaXJ0CY74-Tv9AHQaNHJLXafsjuip-Sx~RrrpKkGNTGeq1C3jbgBWmYm5Ah6YqGWUP5ZOZqoK~hD0zBWFbrRc~RnmVGDHRouiRFTp4fC7EIj-IOEU6lIxbtPAXMPASkimEg3Sv0ArgYDgzgjVZRTFlfkqcw__"
+                                alt="" onclick="goToProductDetails()" class="card-img-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see more details">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                        RAM, 512...</h6>
+                                </div>
+                                <h5>Rs. 37,990</h5>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+                                    <button class="btn btn-primary me-md-2" type="button" onclick="buynow()">Buy</button>
+                                </div>
+                                <p class="card-text price"><span class="float-start rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                    </span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <img src="https://s3-alpha-sig.figma.com/img/1a6a/7b9a/11dad064d92b4820adf2612e251d61cc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iY6zEJWe10XMDcRvleGZcPd7BtrY0xYktizxETH9VKj4-gwG6EUv0SJwzgFNPZIGE0ECHHuyFLlBXWTdGKeTHoUB4yiU2lXXRco80cNKFOEBRpuFOD2nCI0BBXnbi0wp3-os~-kY8vHfk-p2te6SK99Z1aFYIoDbrAB-MpUuECIByY1gptqNBp792iKKYALcH1E9Unad~6JVmgGrf5UDLwbL1asbizZREtEMBvCKIBoiys4TIGqn2~1NmgKAJK8jegoCCTxOZTjPhRVzvg6RLKwy4WQrHx-Rl8geDEM-s7w2x7ELVVSSHj6Qfdb9TWzXk7dsVfejL6p-DawQ52hzeg__"
+                                alt="" onclick="goToProductDetails()" class="card-img-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see more details">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                        RAM, 512...</h6>
+                                </div>
+                                <h5>Rs. 37,990</h5>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+                                    <button class="btn btn-primary me-md-2" type="button" onclick="buynow()">Buy</button>
+                                </div>
+                                <p class="card-text price"><span class="float-start rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                    </span> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-wrap: nowrap;align-items: center;">
+        <div class="accessories">
+            <h5><b>Accessories</b></h5>
+            <div class="container" style="background-color:rgba(205,230,254,255);border-radius: 12px;
+        border: 3px solid #41464b;">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/f135/a0a0/540862c79f1c6578d56687b2fa109dbe?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZNS3SiJ~hyxEtUqhKx0C88l05S1TqcsFBbvefvr9uMOcKiMB6ZlUK5t7BYlSiEbeyHM0u1mCXdqzTpPZL5JeojsTN4bQA0bN6btcP14XqLqekXW1-Yty5ELCxQce-vgmAFKJ-R1pytdayka7MXgsvRVX2cz1BcjWxfwvPs14O-PXcqbNPhL1L81WuhM33R~pS~PgYMOwqxMyT8ydDJverSSyfCkmPmGmcVnE2YqtmqB28z4GDghZjWVIJ8v4O7VRH3MAV7n4qoEc5GduvpnQ-V3HohG~i7bKGnGFBAs-CGcPglI5doz9eUh1MmSekE-iEKsbZwNccqe~pXKuipVxrg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>Mouse & Keyboard</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/d85c/12d0/1e50093f5c411748c8302a1efd1a1c41?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MN65Xym33XnVaVOPoccKG0mxN9AM4sU6q6FAZxK4dD40zVy2DZ90jwxGEmxWATInnyovaRwNAYoXOBsmef88DDnrQaTB4O-kr6Oqcn-Pd10ezNMJm4mO69A~K1pxt5eTVkL6e6AU0pA-B2quKuY0gHO-Y30VCRKQu9IsWAASXus513akpjE4ck19nAWRA6Li5p0SeOxBzA5ilfO3pW3TkajVnoBMsJZO~6vlNlaHEXNMAbrAVCDNa81EuehIuRsCbUR9XvIcZ1ZoBOUVNxnALPG0OBOFGOuWiDPaCxwu3ZhCMKdNCtSd9q-vBBUgUpZjCAINh5efkVVrXBckFlq2jw__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>Portable laptop Riser</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/e237/03d6/93540d7f152e282bcd24f4fa9458c22e?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MjNbagEB05Whex6agZ3qZF0WXIlCSQvghIeO8a3esjSwZS701oP48vXu7yxpYaZ6C1EZvnlXnKliXONr8VRHoEa1bBT5KLefXtnn~P1TcOPS2wcdBs8BQ6ttGpDy5SvZ2qSGGyGOBUml5eI7diHwe1WnJLr8GMQjGqtMQvUGSF4v2kqOh0cYx-50Yip4obygQsutRJnvCwyU8~M4yj0U1yjQF-LuElS94R-8~LENfjb5Fdti~ohE4T1XouoRdhXkRjqbGLgPqx0fLIZ9HsNgilF1CLA0SKQnDGUAAjSzIVfPxUWbd5ZA0VaMJGdy8riCLFiZQyJ0JQwX7vVnDkKicg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>laptop sleeves</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/3943/0045/be64643a59cbe257874e15de6b12119a?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yyw~-mzmriThTGwfnw3kKnXUvTKYM-uC1VY3dt3Yh~k64pgHEKf7G4c0BBTTq9vZ15Bb7GE1MyjrFgpXJ~wvqU2ZihzJ70RovpWAQvQmKkZS0Hlsp-iGMOFUG-Uhm4qYoyxK5WI4O-2CapSMo1ZlOkgWly7iSO0s2NoCII8RG-ELLjLOOaD8ZIy4KW5YTjr7UwOTLfstBEgVxFOkLZxK7EpMHJCbtBeg5d8tTn1GJpp5qwKz5pLRTD5y6Iqms67xmxsAhiB4I3H1lgbv8Wnb-dSjBWB4j4CjMK3cVwBJSGgi6VUN-aw6Z5gd-ZiZe5-mFdXnsep7sCvOL9C75tHmTw__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>Use C Hub</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="font">
+            <h1 style="font-size: 4vmin;text-align: left;"><b>Buy the most Convenient</b></h1>
+            <h1 style="font-size: 4vmin;text-align: left;font-family: myFont;font-size: 11vmin;color: rgb(185, 185, 223);">Accessories for laptops</h1>
+            <div class="d-grid gap-2 d-md-flex " style="border-radius: 12px;">
+                <button class="btn btn-primary me-md-2" type="button">View all</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="best">
+        <div class="container-fluid  my-4" style="background-color: #012057;">
+            <h4 style="color: white;">Recommended</h4>
+            <h1 style="color: white;">Best Computers for multi-purposes</h1>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <i class="bi bi-heart-fill position-absolute liked"></i>
+                            <i class="bi bi-heart position-absolute like"></i>
+                            <div class="card border-0 shadow">
+                                <img src="https://s3-alpha-sig.figma.com/img/7d83/be6f/472c590ffba71c5b4facd3c9f7821946?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DtYfaBi1uJQgTswycIjQ7QgIlG2V6J4NhKw0ISumn9MJ79TV3~oreL1wFj9lK4cE8Jdk6pP98L0bYa-8bblIbYjW23G7R0TScTX6~5KiD79pIo68fj908g-EgtyBVUEuE3Qic0XK5ImBtR6ZTEbJ8CvNfTccoz0SxSpUv1XlFHCecDRRxU1NkqtGGaAPt2xANl-ywga7UzJ1waZtPGwMjgViTKdyrPwszqSK-2LcPeOTq0-H-TFqCvUQeCpQ991~QC6~Hw3g2gXV5~gLbQxlbjSeJxqsrjSsq--FdTI3zZI11h3lXh~oz4w~nv3DZsOCKVsUmIxA1bI02fpy2q5Zfg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to see more details"
+                                    alt="" onclick="goToProductDetails()" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>HP Laptop 15s - 12th Gen Intel i5 Processor,
+                                            Intel Iris Xe Graphics, 15.6-inch (39.6cm)...</h6>
+                                    </div>
+                                    <h5>Rs. 53,722</h5>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="https://s3-alpha-sig.figma.com/img/d392/d12c/26a19679b82dab0a9eb79d85e6b0e079?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X4ND4NG99Y4l-yE84mmEiIbbEyN3hYqtetc2aGT6aaP-pR94SjsMu0NA7O5dYOHVkZ4~rWO-XcRJbij3VWZKmlKGIBf2qoR9WcNj7cVL2knZSjLyPF6Bw4yVMFOEDktwDnuGKL1d0psmDw1QIGsBW1srX4YiQRRCiW7gzne8bg7xvlaQkAsFncBhoRLtaXJ0CY74-Tv9AHQaNHJLXafsjuip-Sx~RrrpKkGNTGeq1C3jbgBWmYm5Ah6YqGWUP5ZOZqoK~hD0zBWFbrRc~RnmVGDHRouiRFTp4fC7EIj-IOEU6lIxbtPAXMPASkimEg3Sv0ArgYDgzgjVZRTFlfkqcw__" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to see more details"
+                                    alt="" onclick="goToProductDetails()" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                            RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 37,990</h5>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="https://s3-alpha-sig.figma.com/img/1a6a/7b9a/11dad064d92b4820adf2612e251d61cc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iY6zEJWe10XMDcRvleGZcPd7BtrY0xYktizxETH9VKj4-gwG6EUv0SJwzgFNPZIGE0ECHHuyFLlBXWTdGKeTHoUB4yiU2lXXRco80cNKFOEBRpuFOD2nCI0BBXnbi0wp3-os~-kY8vHfk-p2te6SK99Z1aFYIoDbrAB-MpUuECIByY1gptqNBp792iKKYALcH1E9Unad~6JVmgGrf5UDLwbL1asbizZREtEMBvCKIBoiys4TIGqn2~1NmgKAJK8jegoCCTxOZTjPhRVzvg6RLKwy4WQrHx-Rl8geDEM-s7w2x7ELVVSSHj6Qfdb9TWzXk7dsVfejL6p-DawQ52hzeg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to see more details"
+                                    alt="" onclick="goToProductDetails()" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                            RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 37,990</h5>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="https://s3-alpha-sig.figma.com/img/7d83/be6f/472c590ffba71c5b4facd3c9f7821946?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DtYfaBi1uJQgTswycIjQ7QgIlG2V6J4NhKw0ISumn9MJ79TV3~oreL1wFj9lK4cE8Jdk6pP98L0bYa-8bblIbYjW23G7R0TScTX6~5KiD79pIo68fj908g-EgtyBVUEuE3Qic0XK5ImBtR6ZTEbJ8CvNfTccoz0SxSpUv1XlFHCecDRRxU1NkqtGGaAPt2xANl-ywga7UzJ1waZtPGwMjgViTKdyrPwszqSK-2LcPeOTq0-H-TFqCvUQeCpQ991~QC6~Hw3g2gXV5~gLbQxlbjSeJxqsrjSsq--FdTI3zZI11h3lXh~oz4w~nv3DZsOCKVsUmIxA1bI02fpy2q5Zfg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to see more details"
+                                    alt="" onclick="goToProductDetails()" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                            RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 37,990</h5>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="https://s3-alpha-sig.figma.com/img/d392/d12c/26a19679b82dab0a9eb79d85e6b0e079?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X4ND4NG99Y4l-yE84mmEiIbbEyN3hYqtetc2aGT6aaP-pR94SjsMu0NA7O5dYOHVkZ4~rWO-XcRJbij3VWZKmlKGIBf2qoR9WcNj7cVL2knZSjLyPF6Bw4yVMFOEDktwDnuGKL1d0psmDw1QIGsBW1srX4YiQRRCiW7gzne8bg7xvlaQkAsFncBhoRLtaXJ0CY74-Tv9AHQaNHJLXafsjuip-Sx~RrrpKkGNTGeq1C3jbgBWmYm5Ah6YqGWUP5ZOZqoK~hD0zBWFbrRc~RnmVGDHRouiRFTp4fC7EIj-IOEU6lIxbtPAXMPASkimEg3Sv0ArgYDgzgjVZRTFlfkqcw__"
+                                    alt="" onclick="goToProductDetails()"  class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                            RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 37,990</h5>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="https://s3-alpha-sig.figma.com/img/1a6a/7b9a/11dad064d92b4820adf2612e251d61cc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iY6zEJWe10XMDcRvleGZcPd7BtrY0xYktizxETH9VKj4-gwG6EUv0SJwzgFNPZIGE0ECHHuyFLlBXWTdGKeTHoUB4yiU2lXXRco80cNKFOEBRpuFOD2nCI0BBXnbi0wp3-os~-kY8vHfk-p2te6SK99Z1aFYIoDbrAB-MpUuECIByY1gptqNBp792iKKYALcH1E9Unad~6JVmgGrf5UDLwbL1asbizZREtEMBvCKIBoiys4TIGqn2~1NmgKAJK8jegoCCTxOZTjPhRVzvg6RLKwy4WQrHx-Rl8geDEM-s7w2x7ELVVSSHj6Qfdb9TWzXk7dsVfejL6p-DawQ52hzeg__"
+                                    alt="" onclick="goToProductDetails()" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                            RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 37,990</h5>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hardware d-flex">
+        <div class="looking">
+            <h1 style="font-size: 4vmin;text-align: left; margin-left: 35vmin;"><b>Looking for PC Hardwares</b></h1>
+            <h1 style="font-size: 4vmin;text-align: left; margin-left: 35vmin;font-family: myFont;font-size: 11vmin;color: rgb(231, 149, 149);">Here they are!</h1>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start" style="border-radius: 12px; margin-left: 35vmin;">
+                <button class="btn btn-primary me-md-2" type="button" onclick="goToProductDetails()">View all</button>
+            </div>
+        </div>
+        <div class="computerdevices p-3">
+            <h1><b>Computer Devices & Hardwares</b></h1>
+            <div class="container" style="background-color:rgba(255,188,189,255);border-radius: 12px;
+            border: 3px solid #41464b;">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/f135/a0a0/540862c79f1c6578d56687b2fa109dbe?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZNS3SiJ~hyxEtUqhKx0C88l05S1TqcsFBbvefvr9uMOcKiMB6ZlUK5t7BYlSiEbeyHM0u1mCXdqzTpPZL5JeojsTN4bQA0bN6btcP14XqLqekXW1-Yty5ELCxQce-vgmAFKJ-R1pytdayka7MXgsvRVX2cz1BcjWxfwvPs14O-PXcqbNPhL1L81WuhM33R~pS~PgYMOwqxMyT8ydDJverSSyfCkmPmGmcVnE2YqtmqB28z4GDghZjWVIJ8v4O7VRH3MAV7n4qoEc5GduvpnQ-V3HohG~i7bKGnGFBAs-CGcPglI5doz9eUh1MmSekE-iEKsbZwNccqe~pXKuipVxrg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>Cables & Ports</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/d85c/12d0/1e50093f5c411748c8302a1efd1a1c41?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MN65Xym33XnVaVOPoccKG0mxN9AM4sU6q6FAZxK4dD40zVy2DZ90jwxGEmxWATInnyovaRwNAYoXOBsmef88DDnrQaTB4O-kr6Oqcn-Pd10ezNMJm4mO69A~K1pxt5eTVkL6e6AU0pA-B2quKuY0gHO-Y30VCRKQu9IsWAASXus513akpjE4ck19nAWRA6Li5p0SeOxBzA5ilfO3pW3TkajVnoBMsJZO~6vlNlaHEXNMAbrAVCDNa81EuehIuRsCbUR9XvIcZ1ZoBOUVNxnALPG0OBOFGOuWiDPaCxwu3ZhCMKdNCtSd9q-vBBUgUpZjCAINh5efkVVrXBckFlq2jw__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>Processors</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/e237/03d6/93540d7f152e282bcd24f4fa9458c22e?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MjNbagEB05Whex6agZ3qZF0WXIlCSQvghIeO8a3esjSwZS701oP48vXu7yxpYaZ6C1EZvnlXnKliXONr8VRHoEa1bBT5KLefXtnn~P1TcOPS2wcdBs8BQ6ttGpDy5SvZ2qSGGyGOBUml5eI7diHwe1WnJLr8GMQjGqtMQvUGSF4v2kqOh0cYx-50Yip4obygQsutRJnvCwyU8~M4yj0U1yjQF-LuElS94R-8~LENfjb5Fdti~ohE4T1XouoRdhXkRjqbGLgPqx0fLIZ9HsNgilF1CLA0SKQnDGUAAjSzIVfPxUWbd5ZA0VaMJGdy8riCLFiZQyJ0JQwX7vVnDkKicg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>Graphic Cards</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 p-3 mt-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/3943/0045/be64643a59cbe257874e15de6b12119a?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yyw~-mzmriThTGwfnw3kKnXUvTKYM-uC1VY3dt3Yh~k64pgHEKf7G4c0BBTTq9vZ15Bb7GE1MyjrFgpXJ~wvqU2ZihzJ70RovpWAQvQmKkZS0Hlsp-iGMOFUG-Uhm4qYoyxK5WI4O-2CapSMo1ZlOkgWly7iSO0s2NoCII8RG-ELLjLOOaD8ZIy4KW5YTjr7UwOTLfstBEgVxFOkLZxK7EpMHJCbtBeg5d8tTn1GJpp5qwKz5pLRTD5y6Iqms67xmxsAhiB4I3H1lgbv8Wnb-dSjBWB4j4CjMK3cVwBJSGgi6VUN-aw6Z5gd-ZiZe5-mFdXnsep7sCvOL9C75tHmTw__" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to see more details" onclick="goToProductDetails()"
+                            class="img-fluid rounded" alt="">
+                        <div class="card-body c">
+                            <h5>PC Cabinets</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="similar">
+        <h6>Best Collections</h6>
+        <h4><b>Similar Products</b></h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 p-3 mt-3">
+                    <img src="https://s3-alpha-sig.figma.com/img/f135/a0a0/540862c79f1c6578d56687b2fa109dbe?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZNS3SiJ~hyxEtUqhKx0C88l05S1TqcsFBbvefvr9uMOcKiMB6ZlUK5t7BYlSiEbeyHM0u1mCXdqzTpPZL5JeojsTN4bQA0bN6btcP14XqLqekXW1-Yty5ELCxQce-vgmAFKJ-R1pytdayka7MXgsvRVX2cz1BcjWxfwvPs14O-PXcqbNPhL1L81WuhM33R~pS~PgYMOwqxMyT8ydDJverSSyfCkmPmGmcVnE2YqtmqB28z4GDghZjWVIJ8v4O7VRH3MAV7n4qoEc5GduvpnQ-V3HohG~i7bKGnGFBAs-CGcPglI5doz9eUh1MmSekE-iEKsbZwNccqe~pXKuipVxrg__" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Click to see more details"onclick="goToProductDetails()"
+                        class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h5>Mouse & Keyboard</h5>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-3 mt-3">
+                    <img src="https://s3-alpha-sig.figma.com/img/d85c/12d0/1e50093f5c411748c8302a1efd1a1c41?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MN65Xym33XnVaVOPoccKG0mxN9AM4sU6q6FAZxK4dD40zVy2DZ90jwxGEmxWATInnyovaRwNAYoXOBsmef88DDnrQaTB4O-kr6Oqcn-Pd10ezNMJm4mO69A~K1pxt5eTVkL6e6AU0pA-B2quKuY0gHO-Y30VCRKQu9IsWAASXus513akpjE4ck19nAWRA6Li5p0SeOxBzA5ilfO3pW3TkajVnoBMsJZO~6vlNlaHEXNMAbrAVCDNa81EuehIuRsCbUR9XvIcZ1ZoBOUVNxnALPG0OBOFGOuWiDPaCxwu3ZhCMKdNCtSd9q-vBBUgUpZjCAINh5efkVVrXBckFlq2jw__" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Click to see more details"
+                    onclick="goToProductDetails()"   class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h5>Headphones and Speakers</h5>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-3 mt-3">
+                    <img src="https://s3-alpha-sig.figma.com/img/e237/03d6/93540d7f152e282bcd24f4fa9458c22e?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MjNbagEB05Whex6agZ3qZF0WXIlCSQvghIeO8a3esjSwZS701oP48vXu7yxpYaZ6C1EZvnlXnKliXONr8VRHoEa1bBT5KLefXtnn~P1TcOPS2wcdBs8BQ6ttGpDy5SvZ2qSGGyGOBUml5eI7diHwe1WnJLr8GMQjGqtMQvUGSF4v2kqOh0cYx-50Yip4obygQsutRJnvCwyU8~M4yj0U1yjQF-LuElS94R-8~LENfjb5Fdti~ohE4T1XouoRdhXkRjqbGLgPqx0fLIZ9HsNgilF1CLA0SKQnDGUAAjSzIVfPxUWbd5ZA0VaMJGdy8riCLFiZQyJ0JQwX7vVnDkKicg__" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Click to see more details"
+                    onclick="goToProductDetails()"    class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h5>Monitors</h5>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-3 mt-3">
+                    <img src="https://s3-alpha-sig.figma.com/img/3943/0045/be64643a59cbe257874e15de6b12119a?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yyw~-mzmriThTGwfnw3kKnXUvTKYM-uC1VY3dt3Yh~k64pgHEKf7G4c0BBTTq9vZ15Bb7GE1MyjrFgpXJ~wvqU2ZihzJ70RovpWAQvQmKkZS0Hlsp-iGMOFUG-Uhm4qYoyxK5WI4O-2CapSMo1ZlOkgWly7iSO0s2NoCII8RG-ELLjLOOaD8ZIy4KW5YTjr7UwOTLfstBEgVxFOkLZxK7EpMHJCbtBeg5d8tTn1GJpp5qwKz5pLRTD5y6Iqms67xmxsAhiB4I3H1lgbv8Wnb-dSjBWB4j4CjMK3cVwBJSGgi6VUN-aw6Z5gd-ZiZe5-mFdXnsep7sCvOL9C75tHmTw__" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Click to see more details"
+                    onclick="goToProductDetails()"    class="img-fluid rounded" alt=""> 
+                    <div class="card-body">
+                        <h5>Mouse & Keyboard</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+            <button class="btn btn-primary me-md-2" type="button" onclick="goToProductDetails()">View all</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <footer class="container py-5 text-white">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Personal Computers</a></li>
+                        <li><a class="link-secondary" href="#">Laptops</a></li>
+                        <li><a class="link-secondary" href="#">Gaming Computers</a></li>
+                        <li><a class="link-secondary" href="#">Gaming Laptops</a></li>
+                    </ul>
+                    <small class="d-block mb-3 text-muted">&copy; Copyright Evo.com</small>
+                    <small class="d-block mb-3 text-muted">All Rights Reserved</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Laptops</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Laptop Accessories</a></li>
+                        <li><a class="link-secondary" href="#">Bluetooth devices</a></li>
+                        <li><a class="link-secondary" href="#">Bags</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Computer Hardware</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#"> Intel & AMD Processor</a></li>
+                        <li><a class="link-secondary" href="#">Hardrive & SSD</a></li>
+                        <li><a class="link-secondary" href="#">SMPS & Cables</a></li>
+                        <li><a class="link-secondary" href="#">Mother Board</a></li>
+                        <li><a class="link-secondary" href="#">RAM</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Let us help you</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Your Account</a></li>
+                        <li><a class="link-secondary" href="#">Report an issue</a></li>
+                        <li><a class="link-secondary" href="#">Order History</a></li>
+                        <li><a class="link-secondary" href="#">Terms & Conditions</a></li>
+                        <li><a class="link-secondary" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Call support-1188-6454-80</a></li>
+                        <li><a class="link-secondary" href="#">evo.electronics@gmail.com</a></li>
+                        <li><a class="link-secondary mt-3" href="#">Let’s Connect</a></li>
+                        <div class="fb margin-right:5vmin;">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="toast align-items-center text-white bg-primary border-0 position-fixed top-0" role="alert"
+        aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Item is successfully added to your cart.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+    <!-- Links -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

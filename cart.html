@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer {
+            background-color: rgba(0, 58, 113, 255);
+        }
+
+        img {
+            height: 280px;
+        }
+
+        body {
+            background: hsl(0, 0, 94%);
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container px-5">
+        <a class="navbar-brand" href="Home.html"><b>Evo</b>.com</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!-- <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">Home </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Categories</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#"> Laptops</a>
+                <a class="dropdown-item" href="#">Computers</a>
+                <a class="dropdown-item" href="#">Processors </a>
+                <a class="dropdown-item" href="#">Graphic Cards</a>
+                <a class="dropdown-item" href="#">Cables & Ports</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactus</a>
+            </li>
+          </ul> -->
+          <div class="col-md-6 col-sm-8 col-xs-11 navbar-left mt-2">
+            <div class="navbar-form " role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="max-width: 100%; width: 100%; border-radius: 230px;">
+                    <!-- <div class="input-group-btn">
+                        <button class="btn btn-default" style="background: rgb(25, 97, 204);" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for more Information"><i class="glyphicon glyphicon-search"></i></button>
+                    </div> -->
+                </div>
+            </div>
+        </div> 
+        <form class="d-flex my-2 my-lg-0">
+            <i style="color: white; margin-left: 2vmin;" class="bi bi-heart p-2"></i>
+            <i style="color: white; margin-left: 2vmin;" class="bi bi-bell p-2"></i>
+            <i style="color: white; margin-left: 2vmin;" class="bi bi-cart p-2"></i>
+            <i style="color: white; margin-left: 2vmin; padding: 2vmin;"><span>Login/Signup</span></i>
+            <i style="color: white; margin-left: 2vmin;" class="bi bi-person-circle p-2"></i>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+<div style="padding: 1vmin; margin: 3vmin;">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+
+<div class="it2 d-flex">
+  <h1 style="color: blue;"><b>Cart</b></h1>
+  <h6 style="color: blue; margin-left: 170vmin;">Items: 2</h6>
+</div>
+
+<div class="b1">
+  <div class="cartimg p-3 m-3">
+    <div class="i">
+      <img src="https://s3-alpha-sig.figma.com/img/e352/cc86/b7a1f038791ca97411223d2d7b6bd484?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QzlwRZBe1utBPineNeYl~uryJgnuJoVXX4uKtLI8CCbkSMjryGbkErzEyRWX3mM5atfaGh9QLV34BPOmxNHlvYqXGRosho1z~JLJiXI0KOfbVnv3FJOcH0sknxssCw7bRx9v8NhBEWMXX1kKubyvQgJatQquk9xs-lk9cIqVCkxMHduqA6cQLg-iXwv8N8kDWXUlo7IbxKpBXmPeSjptDKGgtuAhivnsKuaZDjZC-SBdQyoDRHoOYxZsESgjvGY~bBBvWOSZXqdeinivCgBcFxplbNsYgJmml1NPz82aZd~u1keDhPt3JkmDfq2CmlyK4F4J6eFpoXMEe6Z9jDKrHw__" alt="" srcset="">
+    </div>
+    <div style="margin-right: 12vmin;
+    padding: 5vmin;" class="t">
+      <h4>HP Laptop 15s</h4>
+      <h6>12th Gen Intel Core i5-1235U, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 512GB SSD, Intel Iris Xe Graphics, Backlit KB,MSO,Thin & Light, Dual Speakers (Win 11, Silver, 1.69 kg), fq5330TU </h6>
+      <p class="card-text price"><span class="float-start rating-stars">
+          <i style="color: blue;" class="bi bi-star-fill"><span style="color: black;">4.2 &nbsp; (6,567)</span></i>
+      </span> </p>  
+      <p style="margin-top: 23vmin;">With Extended warranty for 1 year - Rs.1590/-</p>
+
+    </div>
+    <div class="r">
+      <h6 style="color: blue;">Brand:HP</h6>
+      <h6><b>Rs.55,312/-</b></h6>
+    </div>
+  </div>
+  <hr>
+  <div class="img2 p-3 m-3">
+  <div class="i">
+    <img src="https://s3-alpha-sig.figma.com/img/d85c/12d0/1e50093f5c411748c8302a1efd1a1c41?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MN65Xym33XnVaVOPoccKG0mxN9AM4sU6q6FAZxK4dD40zVy2DZ90jwxGEmxWATInnyovaRwNAYoXOBsmef88DDnrQaTB4O-kr6Oqcn-Pd10ezNMJm4mO69A~K1pxt5eTVkL6e6AU0pA-B2quKuY0gHO-Y30VCRKQu9IsWAASXus513akpjE4ck19nAWRA6Li5p0SeOxBzA5ilfO3pW3TkajVnoBMsJZO~6vlNlaHEXNMAbrAVCDNa81EuehIuRsCbUR9XvIcZ1ZoBOUVNxnALPG0OBOFGOuWiDPaCxwu3ZhCMKdNCtSd9q-vBBUgUpZjCAINh5efkVVrXBckFlq2jw__" alt="" srcset="">
+  </div>
+    <div style="margin-right: 12vmin;
+    padding: 5vmin;" class="t">
+      <h4>Zebronics Thunder bluetooth</h4>
+    <h6>Wireless Headphones with 60H Backup, Gaming Mode, Dual Pairing, ENC, AUX, Micro SD, Voice assistant, Comfortable Earcups, Call Function(Black)</h6>
+    <p class="card-text price"><span class="float-start rating-stars">
+        <i style="color: blue;"  class="bi bi-star-fill"><span style="color: black;">3.8 &nbsp;(16,567)</span></i>
+    </span> </p>
+    </div>
+    <div class="r">
+      <h6 style="color: blue;">Brand:Zebronics</h6>
+      <h6><b>Rs.758/-</b></h6>
+    </div>
+  </div>
+</div>
+<hr>
+  <div class="delivery">
+        <div class="row  g-5">
+          <div class="col-md-7 col-lg-8">
+            <form class="needs-validation need" novalidate>
+              <h4 class="mb-3 p-3 my-4">Delivery Details</h4>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid  name is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                      <label for="numberInput">Number:</label>
+                      <input type="number" class="form-control" id="numberInput" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+                <label for="address" class="form-label">Delivery Address *</label>
+                <div class="col-12 d-flex">
+                  <label for="address" class="form-label">House no & Street</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                </div>
+                <div class="col-12 d-flex">
+                  <label for="country" class="form-label">City & State</label>
+                  <input type="text" class="form-control" id="address" placeholder="City & State" required>
+                </div>
+                <label for="zip" class="form-label">Pincode</label>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <h4 class="mb-3">Select Payment Method</h4>
+              <div class="pay">
+                <div class="my-3">
+                  <div class="form-check">
+                    <div class="add d-flex">
+                      <input id="credit" name="paymentMethod" type="checkbox" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Credit card or Debit card</label>
+                    <h6 style="margin-left: 10vmin;color: blue;">Add card details</h6>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <div class="upi d-flex">
+                      <input id="debit" name="paymentMethod" type="checkbox" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">UPI Transaction - Gpay &  PayPal</label>
+                    <h6 style="margin-left: 2vmin;color: blue;">Add UPI details</h6>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">Net Banking</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">Cash on Delivery</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal"><span style="color: blue;">EMI option</span> (This product is eligible for No-cost EMI)</label>
+                  </div>
+                  <div class="method">
+                    <p style="color: rgba(226, 209, 209, 0.664);">Payment method is not selected
+                      Select any one to add details and complete the process.</p>
+                      <p style="color: rgba(226, 209, 209, 0.664);">If you had already logged in and entered all details. It will be filled automatically, but if you haven’t, Then you can enter above.</p>
+                  </div>
+                </div>
+              </div>
+            </form> 
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4 order-md-last cart">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3 p-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  HP Laptop 15s
+                </label>
+              </div>
+              <span class="text-body-secondary">Rs 53,722</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Zebronics Bluetooth Heaphone
+                </label>
+              </div>
+              <span class="text-body-secondary">Rs 53,722</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Grand Total</span>
+              <strong>Rs. 56,070</strong>
+            </li>
+          </ul>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 24px;">
+            <button class="btn btn-primary me-md-2" type="button" onclick="payment()">Complete Payment</button>
+        </div>
+        </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="footer">
+  <footer class="container py-5 text-white">
+      <div class="row">
+          <div class="col-12 col-md">
+              <h5>Categories</h5>
+              <ul  class="list-unstyled text-small">
+                  <li><a class="link-secondary" href="#">Personal Computers</a></li>
+                  <li><a class="link-secondary" href="#">Laptops</a></li>
+                  <li><a class="link-secondary" href="#">Gaming Computers</a></li>
+                  <li><a class="link-secondary" href="#">Gaming Laptops</a></li>
+              </ul>
+              <small class="d-block mb-3 text-muted">&copy; Copyright Evo.com</small>  
+              <small class="d-block mb-3 text-muted">All Rights Reserved</small>
+          </div>
+          <div class="col-6 col-md">
+              <h5>Laptops</h5>
+              <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary" href="#">Laptop Accessories</a></li>
+                  <li><a class="link-secondary" href="#">Bluetooth devices</a></li>
+                  <li><a class="link-secondary" href="#">Bags</a></li>
+              </ul>
+          </div>
+          <div class="col-6 col-md">
+              <h5>Computer Hardware</h5>
+              <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary" href="#"> Intel & AMD Processor</a></li>
+                  <li><a class="link-secondary" href="#">Hardrive & SSD</a></li>
+                  <li><a class="link-secondary" href="#">SMPS & Cables</a></li>
+                  <li><a class="link-secondary" href="#">Mother Board</a></li>
+                  <li><a class="link-secondary" href="#">RAM</a></li>
+              </ul>
+          </div>
+          <div class="col-6 col-md">
+              <h5>Let us help you</h5>
+              <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary" href="#">Your Account</a></li>
+                  <li><a class="link-secondary" href="#">Report an issue</a></li>
+                  <li><a class="link-secondary" href="#">Order History</a></li>
+                  <li><a class="link-secondary" href="#">Terms & Conditions</a></li>
+                  <li><a class="link-secondary" href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div class="col-6 col-md">
+              <h5>Contact</h5>
+              <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary" href="#">Call support-1188-6454-80</a></li>
+                  <li><a class="link-secondary" href="#">evo.electronics@gmail.com</a></li>
+                  <li><a class="link-secondary mt-3" href="#">Let’s Connect</a></li>
+                  <div class="fb margin-right:5vmin;">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                  </div>
+              </ul>
+          </div>
+      </div>
+  </footer>
+</div>
+    
+    
+    
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        </script>
+        
+</body>
+</html>
