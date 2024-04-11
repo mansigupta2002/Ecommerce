@@ -1,3 +1,6 @@
+.body{
+  font-family: Poppins;
+}
 @font-face {
   font-family: myFont;
   src: url(font.otf);
